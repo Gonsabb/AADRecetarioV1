@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">AADRecetarioV1</string>
+
+    <string name="nombreReceta">Nombre de la receta</string>
+    <string name="categoria">Categoria</string>
+    <string name="pasos">Instrucciones</string>
+    <string name="paso1">Primer Paso</string>
+    <string name="paso2">Segundo Paso</string>
+    <string name="paso3">Tercer Paso</string>
+    <string name="paso4">Cuarto Paso</string>
+    <string name="paso5">Quinto Paso</string>
+
+    <string name="aperitivo">Aperitivo</string>
+    <string name="carne">Carne</string>
+    <string name="pescado">Pescado</string>
+    <string name="postre">Postre</string>
+
+    <string name="borrar">Borrar</string>
+    <string name="editar">Editar</string>
+    <string name="add">Añadir Receta</string>
+    <string name="addingrediente">Añadir Ingredientes</string>
+
+    <string name="insertar">Insertar</string>
+    <string name="editorreceta">Editor de recetas</string>
+
+    <string name="editaringredientes">Editar ingredientes</string>
+    <string name="verdetalles">Ver Detalles</string>
+
+</resources>

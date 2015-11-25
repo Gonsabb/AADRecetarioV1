@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:background="@drawable/fondoitem">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/nombreReceta"
+        android:id="@+id/tvNombreReceta"
+        style="@style/textonegro"
+        android:textSize="22sp"
+        android:textStyle="italic"
+        android:layout_alignBottom="@+id/ibMenos"
+        android:layout_toRightOf="@+id/imageView"
+        android:layout_toEndOf="@+id/imageView" />
+
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="45dp"
+        android:id="@+id/ibMenos"
+        android:src="@drawable/minus"
+        android:layout_alignTop="@+id/ibMas"
+        android:layout_alignLeft="@+id/ibMas"
+        android:layout_alignStart="@+id/ibMas" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/desplegable"
+        android:layout_below="@+id/imageView"
+        android:layout_alignRight="@+id/ibMenos"
+        android:layout_alignEnd="@+id/ibMenos">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Medium Text"
+            android:id="@+id/textView"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/verdetalles"
+            android:id="@+id/btDetalles"
+            android:layout_below="@+id/textView"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/imageView"
+        android:src="@drawable/imgrec"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="16dp"
+        android:layout_margin="6dp" />
+
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="45dp"
+        android:id="@+id/ibMas"
+        android:src="@drawable/plus"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/tvNombreReceta"
+        android:layout_alignEnd="@+id/tvNombreReceta"
+        android:layout_margin="6dp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_below="@+id/desplegable"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
